@@ -32,7 +32,7 @@ def read_requirements(path):
 setup(
     name="gpt_console_helper",
     version=read("gpt_console_helper", "VERSION"),
-    description="Awesome gpt_console_helper created by CrosswaveOmega",
+    description="A simple command line tool that asks gpt-3.5-turbo how to do shell commands. ",
     url="https://github.com/CrosswaveOmega/gpt-console-helper/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
@@ -40,7 +40,8 @@ setup(
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["gpt_console_helper = gpt_console_helper.__main__:main"]
-    },
-    extras_require={"test": read_requirements("requirements-test.txt")},
+        "console_scripts": [
+            "howto = gpt_console_helper.__main__:main",
+            ]
+    }
 )
