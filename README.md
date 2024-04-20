@@ -27,7 +27,3 @@ $ python -m howto "How do I tarball this directory."
 #or
 $ howto "How do I tarball this directory."
 ```
-
-## Development
-
-Read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
